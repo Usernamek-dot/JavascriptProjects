@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+    <script>
+        // constructor
+        function Persona(doc, nombre) {
+            // propiedad privada
+            var edad = 0;
+            var edadSaludo = 1;
+            //propiedades del constructor
+            this.doc = doc;
+            this.nombre = nombre;
+
+            //metodos privilegiados
+
+            this.getEdad = function() {
+                return edad;
+            }
+            this.setEdad = function(nuevaEdad) {
+                edad = nuevaEdad;
+            }
+            this.getEdadSaludo = function() {
+                return edadSaludo;
+            }
+
+
+        }
+        //crear metodo en prototipo de la clase persona
+
+        Persona.prototype.saludar = function(nombre) {
+                console.log(this.nombre + " saluda a " + nombre);
+            }
+            //desde los metodos publicos(prototype) poder hacer uso de los metodos privados(constructor)
+        Persona.prototype.crecer = function() {
+            this.setEdad((this.getEdad() + 1));
+            //comprobar si tiene edad para saludar
+            if (this.getEdad() >= this.getEdadSaludo()) {
+                this.saludar("");
+            }
+
+        }
+        Persona.prototype.prueba = function() {}
+
+        //instanciar creando obj
+        var yo = new Persona("9845", "fulana");
+        var otro = new Persona("4433", "Sultana");
+
+        yo.saludar("JOSE");
+        yo.crecer();
+
+        //imprimir
+        console.log(yo.edad);
+    </script>
+</body>
+
+</html>

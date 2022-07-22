@@ -1,0 +1,23 @@
+body{
+background-color:pink;
+padding:0;
+margin:0;
+}
+h1{
+text-align:center;
+}
+
+div{
+width:200px;
+height:200px;
+background:#ffeaa7;
+display:inline-block;
+margin:10px;
+border:2px solid white;
+}
+.purple{
+ background:#a29bfe;
+}
+.red{
+background:#fab1a0;
+}

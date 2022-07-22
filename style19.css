@@ -1,0 +1,11 @@
+.thumb{
+width:300px;
+/*velocidad de cambio de tamaño (trancisión)*/
+transition: 300ms all ease;
+	
+}
+
+.grande{
+width:800px;
+
+}

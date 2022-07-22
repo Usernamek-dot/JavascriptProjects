@@ -1,0 +1,1 @@
+alert("Este texto debe aparecer en pantalla");
