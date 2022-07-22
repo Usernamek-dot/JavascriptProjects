@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif', serif;
+}
+
+
+/* formulario */
+
+input {
+    width: 96%;
+    height: 30px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.342);
+}
+
+.resultado {
+    width: 100%;
+    height: 40px;
+    margin: 2px;
+    overflow: hidden;
+}
+
+.izquierda,
+.derecha {
+    text-align: center;
+    float: left;
+    border-radius: 0px 18px 18px 0px;
+    padding: 5px;
+    font-size: 20px;
+    width: 47%;
+    margin: 1px;
+}
+
+.izquierda {
+    background: #FF4E50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #FF4E50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.derecha {
+    background: #B3FFAB;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #12FFF7, #B3FFAB);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #12FFF7, #B3FFAB);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 1px;
+    border-radius: 10px;
+}
